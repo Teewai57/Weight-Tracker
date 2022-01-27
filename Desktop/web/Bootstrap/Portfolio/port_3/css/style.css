@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: rgb(205, 223, 230); */
+}
+.navbar li{
+    list-style: none;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+.hover_grey:hover{
+  background-color: rgb(68, 67, 67);
+}
+.nav2{
+    background-color: white;
+}
+nav{
+    background-color: grey;
+    line-height: 38px;
+    color: rgb(229, 226, 226);
+}
+.second_navbar{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    /* position: relative; */
+    /* right: 30px; */
+    /* padding-right: 100px !important; */
+}
+.webname{
+    position: relative;
+    /* right: 40px; */
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+.icon1{
+    font-size: 20px;
+    color: white;
+}
+.icon{
+    position: relative;
+    /* right: 20px; */
+}
+.nav_p{
+    font-size: 15px;
+    color: rgb(78, 76, 76);
+    position: relative;
+    right: 10px;
+}
+.placeholder{
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 900px;
+    box-shadow:none;
+   }
+   .placeholder1{
+       position: relative;
+    right: 30px !important;
+    /* position: relative; */
+    /* right: 26px; */
+    display: flex;
+
+   }
+.search_icon{
+    font-size: 20px;
+    
+}
+
+.nav_icon{
+    margin-top: 10px;
+}
+.nav_text{
+    margin-top: 10px;
+}
+
+.image{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 8px;
+}
+.vl{
+    border-left: 1px solid grey;
+    height: 14px;
+    margin-top: 17px !important;
+}
+.lightblue_layer h1{
+    font-size: 25px;
+}
+.lightblue_layer{
+    /* background-color: rgb(197, 224, 233); */
+}
+.content p{
+    font-size: 12px;
+    color: grey;
+}
+.textgrey{
+    color: grey;
+}
+.card_cnt{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.card_icon1{
+    margin-right: 20px;
+    font-size: 25px;
+    color: blue;
+    
+}
+.card_icon2{
+    margin-right: 20px;
+    font-size: 25px;
+    color: green;
+}
+.card_icon3{
+    margin-right: 20px;
+    font-size: 25px;
+    color: rgb(211, 52, 52);
+}
+.card_icon4{
+    margin-right: 20px;
+    font-size: 25px;
+    color: rgb(243, 183, 71);
+}
+.card_icon5{
+    font-size: 25px;
+    color: black;
+    margin-left: 27px;
+    /* padding-left: 50px; */
+}
+.main{
+    display: flex;
+}
+.cart{
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+}
+.sales{
+    position: relative;
+    bottom: 10px;
+}
+.card{
+    border: none !important;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    /* box-shadow: 1px 1px 1px 1px rgb(238, 235, 235); */
+}
+.col-md-10{
+    /* background-color: white; */
+}
+
+@media max-width(509px) {
+    .placeholder{
+        /* position: relative; */
+        /* right: 26px; */
+    }
+}
