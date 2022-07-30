@@ -1,5 +1,17 @@
 <template>
- <h1>Hello World</h1>
+<main>
+  <h1>Weight Tracker</h1>
+
+  <div class="current">
+    <span>{{ currentWeight.weight }}</span>
+    <small>Current weight (kg)</small>
+  </div>
+
+  <form action="">
+    <input type="number" step="0.1" v-model="weightInput">
+    <input type="submit" value="Add Weight">
+  </form>
+</main>
 </template>
 
 <script>
@@ -12,7 +24,7 @@ const weightChartEl = ref(null)
 
 const weightChart = shallowRef(null)
 
-const weightInput = re(60.0)
+const weightInput = ref(60.0)
 
 const currentWeight = computed(() => {
   return weights.value.sort((a, b) => b.date - a.date)[0] || {weight: 0}
