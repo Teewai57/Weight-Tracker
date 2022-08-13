@@ -1,9 +1,10 @@
-import React from 'react'
-import "./Contact.css"
+import React from 'react';
+import "./About.css";
+
 const About = () => {
   return (
     <div>
-      
+      <div>About</div>
     </div>
   )
 }
