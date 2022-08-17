@@ -18,22 +18,22 @@ const data =[
   {
     avatar:AVTR1,
     name: 'Tina Willer',
-    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!"
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum ap voluptatibus similique voluptas dicta!"
   },
   {
     avatar:AVTR2,
     name: 'John Doe',
-    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!"
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum ap voluptatibus similique voluptas dicta!"
   },
   {
     avatar:AVTR3,
     name: 'Richard Mantez',
-    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!"
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum ap voluptatibus similique voluptas dicta!"
   },
   {
     avatar:AVTR4,
     name: 'Stella Mantz',
-    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!"
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum ap voluptatibus similique voluptas dicta!"
   },
 ]
 
