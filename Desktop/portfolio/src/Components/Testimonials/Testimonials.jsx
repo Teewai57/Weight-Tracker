@@ -5,6 +5,29 @@ import AVTR2 from "../../assets/avatar2.jpg"
 import AVTR3 from "../../assets/avatar3.jpg"
 import AVTR4 from "../../assets/avatar4.jpg"
 
+const data =[
+  {
+    avatar:AVTR1,
+    name: 'Tina Willer',
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!"
+  },
+  {
+    avatar:AVTR2,
+    name: 'John Doe',
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!"
+  },
+  {
+    avatar:AVTR3,
+    name: 'Richard Mantez',
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!"
+  },
+  {
+    avatar:AVTR4,
+    name: 'Stella Mantz',
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!"
+  },
+]
+
 const Testimonials = () => {
   return (
     <section id='testimonials'>
@@ -12,33 +35,21 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
 
       <div className="container testimonials_container">
-        <article className="testimonial">
+        {
+          data.map(({avatar, name, review}, index) => {
+            return(
+              <article className="testimonial">
           <div className="client_avatar">
-            <img src={AVTR1} alt="Avatar one" />
+            <img src={avatar} alt="Avatar one" />
           </div>
-          <h5>Ernest Willer</h5>
+          <h5>{name}</h5>
             <small className="client_review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!
+              {review}
             </small>
         </article>
-        <article className="testimonial">
-          <div className="client_avatar">
-            <img src={AVTR1} alt="Avatar one" />
-          </div>
-          <h5>Ernest Willer</h5>
-            <small className="client_review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!
-            </small>
-        </article>
-        <article className="testimonial">
-          <div className="client_avatar">
-            <img src={AVTR1} alt="Avatar one" />
-          </div>
-          <h5>Ernest Willer</h5>
-            <small className="client_review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci nostrum aperiam a accusantium natus dolore modi, repellendus ullam quibusdam magni nobis quo reiciendis possimus autem voluptatibus similique voluptas dicta!
-            </small>
-        </article>
+            )
+          })
+        }
       </div>
     </section>
   )
