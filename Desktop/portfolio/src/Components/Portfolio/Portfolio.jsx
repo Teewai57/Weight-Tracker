@@ -7,6 +7,50 @@ import IMG4 from "../../assets/portfolio4.jpg";
 import IMG5 from "../../assets/portfolio5.png";
 import IMG6 from "../../assets/portfolio6.jpg";
 
+const data = [
+  {
+    id:1,
+    image:IMG1,
+    title: "Crypto Dashboard",
+    github: "https://github.com/",
+    demo: "https://dribbble.com/"
+  },
+  {
+    id:2,
+    image:IMG2,
+    title: "Crypto Dashboard",
+    github: "https://github.com/",
+    demo: "https://dribbble.com/"
+  },
+  {
+    id:3,
+    image:IMG3,
+    title: "Crypto Dashboard",
+    github: "https://github.com/",
+    demo: "https://dribbble.com/"
+  },
+  {
+    id:4,
+    image:IMG4,
+    title: "Crypto Dashboard",
+    github: "https://github.com/",
+    demo: "https://dribbble.com/"
+  },
+  {
+    id:5,
+    image:IMG5,
+    title: "Crypto Dashboard",
+    github: "https://github.com/",
+    demo: "https://dribbble.com/"
+  },
+  {
+    id:6,
+    image:IMG6,
+    title: "Crypto Dashboard",
+    github: "https://github.com/",
+    demo: "https://dribbble.com/"
+  },
+]
 
 const Portfolio = () => {
   return (
@@ -15,66 +59,20 @@ const Portfolio = () => {
       <h2>portfolio</h2>
 
       <div className="container portfolio_container">
-        <article className="portfolio_item">
+      {data.map(({id, image, title, github, demo}) => {
+        return(
+          <article key={id} className="portfolio_item">
           <div className="portfolio_item-image">
-              <img src={IMG1} alt="" />
+              <img src={image} alt={title} />
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>{title}</h3>
           <div className="portfolio_item-cta">
-          <a href="https://github.com/" className='btn'>Github</a>
-          <a href="https://dribbble.com/" target='_blank' className='btn btn-primary'>Live Demo</a>
+          <a href={github} className='btn'>Github</a>
+          <a href={demo} target='_blank' className='btn btn-primary'>Live Demo</a>
           </div>
         </article>
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-              <img src={IMG1} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-          <a href="https://github.com/" className='btn'>Github</a>
-          <a href="https://dribbble.com/" target='_blank' className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-              <img src={IMG1} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-          <a href="https://github.com/" className='btn'>Github</a>
-          <a href="https://dribbble.com/" target='_blank' className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-              <img src={IMG1} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-          <a href="https://github.com/" className='btn'>Github</a>
-          <a href="https://dribbble.com/" target='_blank' className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-              <img src={IMG1} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-          <a href="https://github.com/" className='btn'>Github</a>
-          <a href="https://dribbble.com/" target='_blank' className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-              <img src={IMG1} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-          <a href="https://github.com/" className='btn'>Github</a>
-          <a href="https://dribbble.com/" target='_blank' className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
+        )
+      })}
       </div>
     </section>
   )
