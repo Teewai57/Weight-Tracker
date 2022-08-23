@@ -13,25 +13,30 @@ const Contact = () => {
       <div className="container contact_container">
         <div className="contact_options">
           <article className='contact_option'>
-            <MdOutlineEmail/>
+            <MdOutlineEmail className='contact_option-icon'/>
             <h4>Email</h4>
             <h5>bobtoyoabasi@gmail.com</h5>
             <a href="mailto:bobtoyoabasi@gmail.com"  target="_blank">Send a message</a>
           </article>
           <article className='contact_option'>
-            <FaLinkedin/>
+            <FaLinkedin className='contact_option-icon'/>
             <h4>LinkedIn</h4>
             <h5>Toyoabasi Bob</h5>
             <a href="https://ng.linkedin.com/in/toyoabasi-bob-9835a7245?trk=people-guest_people_search-card" target="_blank">Send a message</a>
           </article>
           <article className='contact_option'>
-            <BsWhatsapp/>
+            <BsWhatsapp className='contact_option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+2348162340257</h5>
-            <a href="https://api.whatsapp.com/send?phonenumber+2348162340257" target="_blank">Send a message</a>
+            <a href="https://wa.me/08162340257" target="_blank">Send a message</a>
           </article>
         </div>
-        <form action=""></form>
+        <form action="">
+          <input type="text" name="name" placeholder='Full name' required />
+          <input type="email" name="email" placeholder='Email' required />
+          <textarea name="message" rows="7" placeholder='Your message' required></textarea>
+          <button type='submit' className='btn btn-primary'>Send Message</button>
+        </form>
       </div>
     </section>
   )
