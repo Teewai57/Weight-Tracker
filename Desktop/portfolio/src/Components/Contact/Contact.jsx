@@ -13,12 +13,8 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ni73a0y', 'template-rnq7mcd', form.current, 'leMbOuOYgUGLHxo3dph3e')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    emailjs.sendForm('service_ni73a0y', 'template_rnq7mcd', form.current, 'leMbOuOYgUGLHxo3dph3e')
+     e.target.reset();
   };
 
 
